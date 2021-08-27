@@ -14,3 +14,18 @@
 - exemplo: @Component
 
 - todos os componentes com prefixo `app` no seletor
+
+## Criar componentes de forma manual
+
+1. criar os arquivos pertinentes ao componente, todos com o `nome-do-componente.component` e a extensão
+
+- pasta
+    - html
+    - scss
+    - ts
+
+2. adicionar no `declarations` do `app.module.ts`
+
+3. declarar a tag html (o selector) no `app.component.html`
+
+
