@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
     constructor(private service: TransferenciaService) {}
-
-    transferir($event: any): void {
-        this.service.adicionar($event);
-    }
 }
