@@ -27,6 +27,11 @@
 - propagar informação para fora do componente
 - exemplo `@Output() aoTransferir = new EventEmitter();`
 
+### @Input
+
+- recebe valor de outro componente
+- exemplo `@Input() transferencia: any;`
+
 ### {{}}
 
 - interpolação
@@ -38,7 +43,9 @@
 <p>Destino: {{ transferencia?.destino }}</p>
 ```
 
-## Criar componentes de forma manual
+## Criar componentes 
+
+### De forma manual
 
 1. criar os arquivos pertinentes ao componente, todos com o `nome-do-componente.component` e a extensão
 
@@ -50,6 +57,17 @@
 2. adicionar no `declarations` do `app.module.ts`
 
 3. declarar a tag html (o selector) no `app.component.html`
+
+### Pela CLI
+
+`ng generate component nome-do-componente`
+
+- cria pastas e arquivos
+- declara componente no `app.module`
+
+`ng s -o`
+
+- coloca o servidor no ar de volta
 
 ## Data Binding
 

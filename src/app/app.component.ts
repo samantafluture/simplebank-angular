@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    title = 'Simple Bank App';
-    transferencia: any;
+    transferencias: any[] = [];
 
     transferir($event: any): void {
-        this.transferencia = $event;
+        const transferencia = { ...$event, data: new Date() };
+        this.transferencias.push(transferencia);
     }
 }
