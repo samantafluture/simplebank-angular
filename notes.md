@@ -52,7 +52,7 @@
 ### ngIf
 
 - se comporta semelhante ao `if`
-
+- exemplo: `<tbody *ngIf="transferencias.length > 0; else listaVazia">`
 
 ### {{}}
 
